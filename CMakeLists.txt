@@ -22,7 +22,7 @@ add_subdirectory(
   external_packages/ouster_example
   )
 
-target_link_libraries(os_pcap ouster_client ouster_pcap)
+target_link_libraries(os_pcap_to_ros ouster_client ouster_pcap)
 
 # install
 install(TARGETS
