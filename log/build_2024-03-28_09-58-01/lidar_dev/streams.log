@@ -1,0 +1,102 @@
+[0.006s] Invoking command in '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sweun/ros2_ws/src/lidar_dev -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sweun/ros2_ws/src/lidar_dev/install/lidar_dev
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.105s] -- The CXX compiler identification is GNU 11.4.0
+[0.112s] -- Detecting C compiler ABI info
+[0.180s] -- Detecting C compiler ABI info - done
+[0.185s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.185s] -- Detecting C compile features
+[0.185s] -- Detecting C compile features - done
+[0.188s] -- Detecting CXX compiler ABI info
+[0.238s] -- Detecting CXX compiler ABI info - done
+[0.242s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.242s] -- Detecting CXX compile features
+[0.243s] -- Detecting CXX compile features - done
+[0.250s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.453s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.491s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.524s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.565s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.568s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.576s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.590s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.607s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.656s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.659s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.719s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.734s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.759s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.766s] -- Looking for pthread.h
+[0.810s] -- Looking for pthread.h - found
+[0.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.852s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.852s] -- Found Threads: TRUE  
+[0.952s] -- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)
+[0.953s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.034s] -- Found Eigen3: /usr/share/eigen3/cmake/Eigen3Config.cmake (found version "3.4.0") 
+[1.037s] -- Found jsoncpp: /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake (found version "1.9.5") 
+[1.069s] -- Found CURL: /usr/include/x86_64-linux-gnu (found version "7.81.0") 
+[1.101s] -- Found Pcap: /usr/lib/x86_64-linux-gnu/libpcap.so (found version "1.10.1") 
+[1.147s] -- Found libtins: /usr/lib/libtins.so (found version "4.0") 
+[1.155s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.161s] -- Configured GL loader: GLEW
+[1.186s] -- Found GLEW: /usr/include (found version "2.2.0") 
+[1.189s] -- Found glfw3: /usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake (found version "3.3.6") 
+[1.202s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.272s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.272s] -- Configured cppcheck include dirs: 
+[1.272s] -- Configured cppcheck exclude dirs and/or files: 
+[1.274s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.278s] -- Added test 'lint_cmake' to check CMake code style
+[1.280s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.294s] -- Added test 'uncrustify' to check C / C++ code style
+[1.294s] -- Configured uncrustify additional arguments: 
+[1.296s] -- Added test 'xmllint' to check XML markup files
+[1.298s] -- Configuring done
+[1.314s] -- Generating done
+[1.315s] -- Build files have been written to: /home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev
+[1.322s] Invoked command in '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sweun/ros2_ws/src/lidar_dev -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sweun/ros2_ws/src/lidar_dev/install/lidar_dev
+[1.323s] Invoking command in '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev -- -j20 -l20
+[1.354s] [34m[1mGenerating build info header[0m
+[1.354s] [  3%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[1.376s] [  3%] Built target ouster_generate_header
+[1.388s] [ 12%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/lidar_scan.cpp.o[0m
+[1.388s] [ 16%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/image_processing.cpp.o[0m
+[1.388s] [ 16%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/client.cpp.o[0m
+[1.388s] [ 16%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/netcompat.cpp.o[0m
+[1.388s] [ 22%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/types.cpp.o[0m
+[1.388s] [ 22%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/parsing.cpp.o[0m
+[1.388s] [ 25%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_info.cpp.o[0m
+[1.389s] [ 29%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/buffered_udp_source.cpp.o[0m
+[1.390s] [ 32%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http_imp.cpp.o[0m
+[1.390s] [ 35%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/logging.cpp.o[0m
+[1.390s] [ 38%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/util.cpp.o[0m
+[1.391s] [ 41%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/profile_extension.cpp.o[0m
+[1.391s] [ 45%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http.cpp.o[0m
+[1.391s] [ 48%] [32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_tcp_imp.cpp.o[0m
+[2.069s] [01m[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/src/parsing.cpp:[m[K In member function ‘[01m[Kuint32_t ouster::sensor::packet_format::frame_id(const uint8_t*) const[m[K’:
+[2.070s] [01m[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/src/parsing.cpp:443:28:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint16_t ouster::sensor::packet_format::col_frame_id(const uint8_t*) const[m[K’ is deprecated: Use frame_id instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[2.070s]   443 |         return [01;35m[Kcol_frame_id(nth_col(0, lidar_buf))[m[K;
+[2.070s]       |                [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.070s] In file included from [01m[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/include/ouster/impl/packet_writer.h:8[m[K,
+[2.070s]                  from [01m[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/src/parsing.cpp:18[m[K:
+[2.070s] [01m[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/include/ouster/types.h:1102:53:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.070s]  1102 |     [[deprecated("Use frame_id instead")]] uint16_t [01;36m[Kcol_frame_id[m[K(
+[2.070s]       |                                                     [01;36m[K^~~~~~~~~~~~[m[K
+[2.299s] In file included from [01m[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/src/lidar_scan.cpp:6[m[K:
+[2.299s] [01m[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/include/ouster/lidar_scan.h:142:62:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.299s]   142 |         : LidarScan(w, h, {begin, end}, columns_per_packet){}[01;35m[K;[m[K
+[2.299s]       |                                                              [01;35m[K^[m[K
+[2.299s]       |                                                              [31m[K-[m[K
+[3.451s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/talker.cpp.o] Interrupt
+[3.451s] gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:146: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/image_processing.cpp.o] Interrupt
+[3.451s] gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:132: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/lidar_scan.cpp.o] Interrupt
+[3.451s] gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:76: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/client.cpp.o] Interrupt
+[3.451s] gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:104: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_info.cpp.o] Interrupt
+[3.451s] gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:174: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/parsing.cpp.o] Interrupt
+[3.451s] gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:202: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http_imp.cpp.o] Interrupt
+[3.451s] gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:188: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http.cpp.o] Interrupt
+[3.451s] gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:216: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_tcp_imp.cpp.o] Interrupt
+[3.451s] gmake[1]: *** [CMakeFiles/Makefile2:236: CMakeFiles/talker.dir/all] Interrupt
+[3.451s] gmake[1]: *** [CMakeFiles/Makefile2:288: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/all] Interrupt
+[3.451s] gmake: *** [Makefile:166: all] Interrupt
+[3.474s] Invoked command in '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev -- -j20 -l20

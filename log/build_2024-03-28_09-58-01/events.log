@@ -1,0 +1,144 @@
+[0.000000] (-) TimerEvent: {}
+[0.000208] (lidar_dev) JobQueued: {'identifier': 'lidar_dev', 'dependencies': OrderedDict()}
+[0.000466] (lidar_dev) JobStarted: {'identifier': 'lidar_dev'}
+[0.005491] (lidar_dev) JobProgress: {'identifier': 'lidar_dev', 'progress': 'cmake'}
+[0.005642] (lidar_dev) Command: {'cmd': ['/usr/bin/cmake', '/home/sweun/ros2_ws/src/lidar_dev', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sweun/ros2_ws/src/lidar_dev/install/lidar_dev'], 'cwd': '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sweun'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sweun/ros2_ws/install/ouster_ros/lib:/home/sweun/ros2_ws/install/ouster_sensor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:/usr/local/cuda-12.3/lib64:'), ('HOME', '/home/sweun'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sweun/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2001'), ('SYSTEMD_EXEC_PID', '2425'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3627'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sweun/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sweun'), ('JOURNAL_STREAM', '8:41049'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sweun'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sweun/anaconda3/condabin:/usr/local/cuda/bin:/usr/local/cuda-12.3/bin:/home/sweun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sweun/.local/bin:/home/sweun/.local/bin'), ('SESSION_MANAGER', 'local/sweun:@/tmp/.ICE-unix/2251,unix/sweun:/tmp/.ICE-unix/2251'), ('INVOCATION_ID', '4125e365b3dc4085be01902726480237'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/sweun/ros2_ws/install/ouster_ros:/home/sweun/ros2_ws/install/ouster_sensor_msgs:/home/sweun/ros2_ws/install/lidar_dev:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/sweun/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:5dcd1d42-84f0-421a-88ae-ec9aece04be9'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/sweun/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/sweun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sweun/ros2_ws/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sweun/ros2_ws/install/ouster_ros:/home/sweun/ros2_ws/install/ouster_sensor_msgs:/home/sweun/ros2_ws/install/lidar_dev:/opt/ros/humble')]), 'shell': False}
+[0.058560] (lidar_dev) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.100031] (-) TimerEvent: {}
+[0.105252] (lidar_dev) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.112740] (lidar_dev) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.180855] (lidar_dev) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.185129] (lidar_dev) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.185384] (lidar_dev) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.185813] (lidar_dev) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.188142] (lidar_dev) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200135] (-) TimerEvent: {}
+[0.238459] (lidar_dev) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.242684] (lidar_dev) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.242797] (lidar_dev) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.243061] (lidar_dev) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.250562] (lidar_dev) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300238] (-) TimerEvent: {}
+[0.400438] (-) TimerEvent: {}
+[0.453811] (lidar_dev) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.491799] (lidar_dev) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.500537] (-) TimerEvent: {}
+[0.524133] (lidar_dev) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.564963] (lidar_dev) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.568711] (lidar_dev) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.576051] (lidar_dev) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.589914] (lidar_dev) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600626] (-) TimerEvent: {}
+[0.607423] (lidar_dev) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.656492] (lidar_dev) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.658901] (lidar_dev) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700736] (-) TimerEvent: {}
+[0.719087] (lidar_dev) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.734239] (lidar_dev) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.759253] (lidar_dev) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.766173] (lidar_dev) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800851] (-) TimerEvent: {}
+[0.810561] (lidar_dev) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.810732] (lidar_dev) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.851947] (lidar_dev) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.852659] (lidar_dev) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.901007] (-) TimerEvent: {}
+[0.952523] (lidar_dev) StdoutLine: {'line': b'-- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.953609] (lidar_dev) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.001188] (-) TimerEvent: {}
+[1.034357] (lidar_dev) StdoutLine: {'line': b'-- Found Eigen3: /usr/share/eigen3/cmake/Eigen3Config.cmake (found version "3.4.0") \n'}
+[1.037305] (lidar_dev) StdoutLine: {'line': b'-- Found jsoncpp: /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake (found version "1.9.5") \n'}
+[1.069175] (lidar_dev) StdoutLine: {'line': b'-- Found CURL: /usr/include/x86_64-linux-gnu (found version "7.81.0") \n'}
+[1.101386] (-) TimerEvent: {}
+[1.101643] (lidar_dev) StdoutLine: {'line': b'-- Found Pcap: /usr/lib/x86_64-linux-gnu/libpcap.so (found version "1.10.1") \n'}
+[1.147365] (lidar_dev) StdoutLine: {'line': b'-- Found libtins: /usr/lib/libtins.so (found version "4.0") \n'}
+[1.155822] (lidar_dev) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[1.161274] (lidar_dev) StdoutLine: {'line': b'-- Configured GL loader: GLEW\n'}
+[1.185985] (lidar_dev) StdoutLine: {'line': b'-- Found GLEW: /usr/include (found version "2.2.0") \n'}
+[1.189439] (lidar_dev) StdoutLine: {'line': b'-- Found glfw3: /usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake (found version "3.3.6") \n'}
+[1.201469] (-) TimerEvent: {}
+[1.202261] (lidar_dev) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.272017] (lidar_dev) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.272188] (lidar_dev) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.272264] (lidar_dev) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.274888] (lidar_dev) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.278473] (lidar_dev) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.280661] (lidar_dev) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.294669] (lidar_dev) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.294789] (lidar_dev) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.296713] (lidar_dev) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.298044] (lidar_dev) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.301526] (-) TimerEvent: {}
+[1.314195] (lidar_dev) StdoutLine: {'line': b'-- Generating done\n'}
+[1.315494] (lidar_dev) StdoutLine: {'line': b'-- Build files have been written to: /home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev\n'}
+[1.321849] (lidar_dev) CommandEnded: {'returncode': 0}
+[1.322317] (lidar_dev) JobProgress: {'identifier': 'lidar_dev', 'progress': 'build'}
+[1.322785] (lidar_dev) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev', '--', '-j20', '-l20'], 'cwd': '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sweun'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sweun/ros2_ws/install/ouster_ros/lib:/home/sweun/ros2_ws/install/ouster_sensor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:/usr/local/cuda-12.3/lib64:'), ('HOME', '/home/sweun'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sweun/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2001'), ('SYSTEMD_EXEC_PID', '2425'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3627'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/sweun/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'sweun'), ('JOURNAL_STREAM', '8:41049'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sweun'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/sweun/anaconda3/condabin:/usr/local/cuda/bin:/usr/local/cuda-12.3/bin:/home/sweun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sweun/.local/bin:/home/sweun/.local/bin'), ('SESSION_MANAGER', 'local/sweun:@/tmp/.ICE-unix/2251,unix/sweun:/tmp/.ICE-unix/2251'), ('INVOCATION_ID', '4125e365b3dc4085be01902726480237'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ko_KR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/sweun/ros2_ws/install/ouster_ros:/home/sweun/ros2_ws/install/ouster_sensor_msgs:/home/sweun/ros2_ws/install/lidar_dev:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/sweun/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:5dcd1d42-84f0-421a-88ae-ec9aece04be9'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sweun/ros2_ws/src/lidar_dev/build/lidar_dev'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/sweun/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/sweun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sweun/ros2_ws/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sweun/ros2_ws/install/ouster_ros:/home/sweun/ros2_ws/install/ouster_sensor_msgs:/home/sweun/ros2_ws/install/lidar_dev:/opt/ros/humble')]), 'shell': False}
+[1.353972] (lidar_dev) StdoutLine: {'line': b'\x1b[34m\x1b[1mGenerating build info header\x1b[0m\n'}
+[1.354134] (lidar_dev) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o\x1b[0m\n'}
+[1.375978] (lidar_dev) StdoutLine: {'line': b'[  3%] Built target ouster_generate_header\n'}
+[1.388173] (lidar_dev) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/lidar_scan.cpp.o\x1b[0m\n'}
+[1.388455] (lidar_dev) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/image_processing.cpp.o\x1b[0m\n'}
+[1.388571] (lidar_dev) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/client.cpp.o\x1b[0m\n'}
+[1.388615] (lidar_dev) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/netcompat.cpp.o\x1b[0m\n'}
+[1.388654] (lidar_dev) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/types.cpp.o\x1b[0m\n'}
+[1.388700] (lidar_dev) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/parsing.cpp.o\x1b[0m\n'}
+[1.388743] (lidar_dev) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_info.cpp.o\x1b[0m\n'}
+[1.389179] (lidar_dev) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/buffered_udp_source.cpp.o\x1b[0m\n'}
+[1.390387] (lidar_dev) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http_imp.cpp.o\x1b[0m\n'}
+[1.390589] (lidar_dev) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/logging.cpp.o\x1b[0m\n'}
+[1.390763] (lidar_dev) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/util.cpp.o\x1b[0m\n'}
+[1.390989] (lidar_dev) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/profile_extension.cpp.o\x1b[0m\n'}
+[1.391197] (lidar_dev) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http.cpp.o\x1b[0m\n'}
+[1.391630] (lidar_dev) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_tcp_imp.cpp.o\x1b[0m\n'}
+[1.401629] (-) TimerEvent: {}
+[1.501908] (-) TimerEvent: {}
+[1.602313] (-) TimerEvent: {}
+[1.702677] (-) TimerEvent: {}
+[1.803070] (-) TimerEvent: {}
+[1.903531] (-) TimerEvent: {}
+[2.003876] (-) TimerEvent: {}
+[2.069710] (lidar_dev) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/src/parsing.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kuint32_t ouster::sensor::packet_format::frame_id(const uint8_t*) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.069939] (lidar_dev) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/src/parsing.cpp:443:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kuint16_t ouster::sensor::packet_format::col_frame_id(const uint8_t*) const\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use frame_id instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.070024] (lidar_dev) StderrLine: {'line': b'  443 |         return \x1b[01;35m\x1b[Kcol_frame_id(nth_col(0, lidar_buf))\x1b[m\x1b[K;\n'}
+[2.070076] (lidar_dev) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.070123] (lidar_dev) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/include/ouster/impl/packet_writer.h:8\x1b[m\x1b[K,\n'}
+[2.070170] (lidar_dev) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/src/parsing.cpp:18\x1b[m\x1b[K:\n'}
+[2.070215] (lidar_dev) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/include/ouster/types.h:1102:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.070268] (lidar_dev) StderrLine: {'line': b' 1102 |     [[deprecated("Use frame_id instead")]] uint16_t \x1b[01;36m\x1b[Kcol_frame_id\x1b[m\x1b[K(\n'}
+[2.070315] (lidar_dev) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.103999] (-) TimerEvent: {}
+[2.204354] (-) TimerEvent: {}
+[2.299386] (lidar_dev) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/src/lidar_scan.cpp:6\x1b[m\x1b[K:\n'}
+[2.299603] (lidar_dev) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sweun/ros2_ws/src/lidar_dev/external_packages/ouster_example/ouster_client/include/ouster/lidar_scan.h:142:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.299700] (lidar_dev) StderrLine: {'line': b'  142 |         : LidarScan(w, h, {begin, end}, columns_per_packet){}\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.299753] (lidar_dev) StderrLine: {'line': b'      |                                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.299803] (lidar_dev) StderrLine: {'line': b'      |                                                              \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[2.304455] (-) TimerEvent: {}
+[2.404753] (-) TimerEvent: {}
+[2.505079] (-) TimerEvent: {}
+[2.605388] (-) TimerEvent: {}
+[2.705707] (-) TimerEvent: {}
+[2.805979] (-) TimerEvent: {}
+[2.906275] (-) TimerEvent: {}
+[3.006571] (-) TimerEvent: {}
+[3.106859] (-) TimerEvent: {}
+[3.207147] (-) TimerEvent: {}
+[3.307413] (-) TimerEvent: {}
+[3.407681] (-) TimerEvent: {}
+[3.451356] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/talker.cpp.o] Interrupt\n'}
+[3.451551] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:146: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/image_processing.cpp.o] Interrupt\n'}
+[3.451596] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:132: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/lidar_scan.cpp.o] Interrupt\n'}
+[3.451632] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:76: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/client.cpp.o] Interrupt\n'}
+[3.451669] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:104: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_info.cpp.o] Interrupt\n'}
+[3.451701] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:174: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/parsing.cpp.o] Interrupt\n'}
+[3.451732] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:202: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http_imp.cpp.o] Interrupt\n'}
+[3.451767] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:188: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_http.cpp.o] Interrupt\n'}
+[3.451799] (lidar_dev) StderrLine: {'line': b'gmake[2]: *** [external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/build.make:216: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/src/sensor_tcp_imp.cpp.o] Interrupt\n'}
+[3.451830] (lidar_dev) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:236: CMakeFiles/talker.dir/all] Interrupt\n'}
+[3.451861] (lidar_dev) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:288: external_packages/ouster_example/ouster_client/CMakeFiles/ouster_client.dir/all] Interrupt\n'}
+[3.451899] (lidar_dev) StderrLine: {'line': b'gmake: *** [Makefile:166: all] Interrupt\n'}
+[3.474558] (lidar_dev) CommandEnded: {'returncode': -2}
+[3.499961] (lidar_dev) JobEnded: {'identifier': 'lidar_dev', 'rc': 'SIGINT'}
+[3.507772] (-) TimerEvent: {}
+[3.510492] (-) EventReactorShutdown: {}
