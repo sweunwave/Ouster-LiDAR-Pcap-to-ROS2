@@ -57,11 +57,21 @@ std::vector<ouster::LidarScan> get_pcap_scans(
 
 int main(int argc, char * argv[])
 {
+    rclcpp::init(argc, argv);
+
+    auto node = rclcpp::Node::make_shared("pcap_to_pointcloud");
+
+    node->declare_parameter<string>("pcap_path");
+    node->declare_parameter<string>("metadata_path");
+
     cout << "pcap publisher start!" << endl;
+
+    string pcap_path;
+    string metadata_path;
     
-    const string pcap_path = "/home/sweun/ros2_ws/src/lidar_dev/pcap/OS-1-128_v3.0.1_4096x5_20230216_144134-000.pcap";
-    const string metadata_path = "/home/sweun/ros2_ws/src/lidar_dev/pcap/OS-1-128_v3.0.1_4096x5_20230216_144134.json";
-    
+    node->get_parameter("pcap_path", pcap_path);
+    node->get_parameter("metadata_path", metadata_path);
+
     auto info = sensor::metadata_from_json(metadata_path);
     XYZLut xyzlut = ouster::make_xyz_lut(info);
 
@@ -97,10 +107,6 @@ int main(int argc, char * argv[])
     };
 
     // Eigen::Array<uint32_t, -1, -1, Eigen::RowMajor> reflectivity;
-
-    rclcpp::init(argc, argv);
-
-    auto node = rclcpp::Node::make_shared("pcap_to_pointcloud");
     auto lidar_pub = node->create_publisher<sensor_msgs::msg::PointCloud>("os_sensor/point_cloud", 10);
 
     rclcpp::WallRate loop_rate(5);

@@ -15,11 +15,8 @@ find_package(sensor_msgs REQUIRED)
 add_executable(os_pcap_to_ros src/os_pcap_to_ros.cpp)
 ament_target_dependencies(os_pcap_to_ros rclcpp std_msgs sensor_msgs)
 
-add_executable(talker src/talker.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
-
 add_subdirectory(
-  external_packages/ouster_example
+  ouster_example
   )
 
 target_link_libraries(os_pcap_to_ros ouster_client ouster_pcap)
@@ -29,6 +26,13 @@ install(TARGETS
   os_pcap_to_ros
   DESTINATION lib/${PROJECT_NAME}
 )
+
+#install the launch, rviz directory
+install(DIRECTORY
+  launch
+  rviz
+  DESTINATION share/${PROJECT_NAME}/
+ )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
