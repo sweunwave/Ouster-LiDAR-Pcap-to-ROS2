@@ -16,8 +16,8 @@ def generate_launch_description():
             name='pcap_to_publish',
             output="screen",
             parameters=[
-                {"pcap_path" : "/home/sweun/pcaps/OS-1-32-U0_v3.0.1_1024x10_20230510_100110-000.pcap"},
-                {"metadata_path" : "/home/sweun/pcaps/OS-1-32-U0_v3.0.1_1024x10_20230510_100110.json"}
+                {"pcap_path" : "/home/sweun/pcaps/OS-1-128_v3.0.1_4096x5_20230216_144134-000.pcap"},
+                {"metadata_path" : "/home/sweun/pcaps/OS-1-128_v3.0.1_4096x5_20230216_144134.json"}
             ]),
 
         Node(

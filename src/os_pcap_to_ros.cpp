@@ -111,11 +111,14 @@ int main(int argc, char * argv[])
 
     rclcpp::WallRate loop_rate(5);
 
-    sensor_msgs::msg::PointCloud msg;
-    msg.header.frame_id = "os_sensor";
+    sensor_msgs::msg::PointCloud::SharedPtr msg = std::make_shared<sensor_msgs::msg::PointCloud>();;
+    msg->header.frame_id = "os_sensor";
     
     for (auto& scan : scans) {
-        msg.header.stamp = rclcpp::Clock().now();
+        msg->channels.clear();
+        msg->points.clear();
+
+        msg->header.stamp = rclcpp::Clock().now();
 
         auto frame_id = scan.frame_id;
         auto ts = scan.timestamp();
@@ -127,25 +130,22 @@ int main(int argc, char * argv[])
         auto signal = scan.field<uint16_t>(sensor::ChanField::SIGNAL).cast<uint32_t>();
         // reflectivity = scan.field<uint16_t>(sensor::ChanField::REFLECTIVITY).cast<uint32_t>();
 
-        geometry_msgs::msg::Point32 point32;
-        sensor_msgs::msg::ChannelFloat32 channel;
-        channel.name = "intensity";
+        geometry_msgs::msg::Point32::SharedPtr point32 = std::make_shared<geometry_msgs::msg::Point32>();
+        sensor_msgs::msg::ChannelFloat32::SharedPtr channel = std::make_shared<sensor_msgs::msg::ChannelFloat32>();
+        channel->name = "intensity";
 
         for (int i = 0; i < xyz.rows(); ++i) {
             for (int j = 0; j < xyz.cols(); ++j) {
-                if (j == 0) point32.x = xyz(i, j);
-                if (j == 1) point32.y = xyz(i, j);
-                if (j == 2) point32.z = xyz(i, j);
+                if (j == 0) point32->x = xyz(i, j);
+                if (j == 1) point32->y = xyz(i, j);
+                if (j == 2) point32->z = xyz(i, j);
             }
-            channel.values.push_back(signal(0, i));
-            msg.points.push_back(point32);
+            channel->values.push_back(signal(0, i));
+            msg->points.push_back(*point32);
         }
-        msg.channels.push_back(channel);
-        lidar_pub->publish(msg);
+        msg->channels.push_back(*channel);
+        lidar_pub->publish(*msg);
         loop_rate.sleep();
-
-        msg.channels.clear();
-        msg.points.clear();
     }
 
     return 0;
